@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liz Wilby — Coding Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!--nav -->
+  <nav id="top-nav">
+    <a href="index.html" class="nav-logo">Liz Wilby</a>
+    <ul class="nav-links">
+      <li><a href="writing.html">Writing Portfolio</a></li>
+      <li><a href="projects.html">Coding Projects</a></li>
+      <li><a href="index.html#resources">Resources</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger">&#9776;</button> <!--for mobile-->
+  </nav>
+
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="writing.html">Writing Portfolio</a>
+    <a href="projects.html">Coding Projects</a>
+    <a href="index.html#resources">Resources</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+  <!--intro-->
+<section id="projects-intro">
+    <h1>Coding Projects</h1>
+    <p>Over the last year, as I've advanced as both a writer and a developer, I've become interested in finding ways to merge the two so it never felt like I was splitting my brain in half. I decided to build two websites. (One for each book) These include outlines and thoughts as well as projects showing maps, timelines, cards for characters and monsters, ones identifying the themes I've focused on, and even a small game. Some of these are still works in progress, but they have given me room to experiment and learn creatively and technically. This website shows some of that coming to life.</p>
+    <!--strengthen^-->
+  </section>
+  <!-- projects -->
+<section id="standalone-projects">
+    <h2>Projects</h2>
+  
+    <div class="project-card">
+      <h3>Calculator</h3>
+      <p>A calculator made with HTML, CSS, and JavaScript. Can do addition, subtraction, multiplication, and division.</p>
+      <a href="https://elizabeth-wilby.github.io/Calculator/" target="_blank">Live Demo</a>
+      <a href="https://github.com/elizabeth-wilby/Calculator" target="_blank">View Code</a>
+    </div>
+  
+    <div class="project-card">
+      <h3>Rock Paper Scissors</h3>
+      <p>Interactive game made with JavaScript using event listeners and DOM manipulation.</p>
+      <a href="https://elizabeth-wilby.github.io/rock-paper-scissors/" target="_blank">Demo</a>
+      <a href="https://github.com/elizabeth-wilby/rock-paper-scissors" target="_blank">View Code</a>
+    </div>
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>A weather app built with HTML, CSS, and JavaScript using the OpenWeatherMap API. Note AI was a big help with this I am still learning about API's!</p>
+      <a href="https://elizabeth-wilby.github.io/weather_App/" target="_blank">Demo</a>
+      <a href="https://github.com/elizabeth-wilby/weather_App" target="_blank">View Code</a>
+    </div>
+    <div>
+      <h3>Chasing Hearts</h3>
+      <p>I made this when I saw that you could place CSS and JavaScript inside of HTML wrapping them with style and script elements. Use WASD and arrow keys to direct the heart and the bullet point.</p>
+      <a href="https://elizabeth-wilby.github.io/chasinghearts/" target="_blank">Demo</a>
+      <a href="https://github.com/elizabeth-wilby/chasinghearts" target="_blank"> View Code</a>
+    </div>
+    <div class="project-card">
+      <h3>Smokey Mouse Effect</h3>
+      <p>I saw this on a website and was interested in learning about mouse events/movement/tracking. I thought it looked cool so I tried to build one myself.</p>
+      <a href="https://elizabeth-wilby.github.io/smokeymouse/" target="_blank">Demo</a>
+      <a href="https://github.com/elizabeth-wilby/smokeymouse" target="_blank">View Code</a>
+    </div>
+  </section>
+  <!--interactive map from playground  -->
+<section id="map">
+    <h3>Interactive World Map</h3>
+    <p>Built for my fantasy novel Hollowfire. Each location on the map has a tooltip with a description of that region. Built using CSS positioning and JavaScript event listeners.</p>
+  
+    <div class="map-wrapper">
+        <img src="interactivemapimage.png" alt="Fantasy World Map" class="map-image">
+        <button class="hotspot hotspot-mountains" data-region="mountains"><span class="pin"></span><span class="label">Dawnmarked Spindals</span></button>
+        <button class="hotspot hotspot-desert" data-region="desert"><span class="pin"></span><span class="label">Dunes of Histren</span></button>
+        <button class="hotspot hotspot-jungle" data-region="jungle"><span class="pin"></span><span class="label">Veridian Shroud</span></button>
+        <button class="hotspot hotspot-channel" data-region="channel"><span class="pin"></span><span class="label">Shard Sea</span></button>
+        <button class="hotspot hotspot-city" data-region="city"><span class="pin"></span><span class="label">Brasshaven</span></button>
+        <button class="hotspot hotspot-city2" data-region="city2"><span class="pin"></span><span class="label">Centralia</span></button>
+        <button class="hotspot hotspot-temple" data-region="temple"><span class="pin"></span><span class="label">Temple of the First Flame</span></button>
+        <button class="hotspot hotspot-town" data-region="town"><span class="pin"></span><span class="label">Cindermoor Crossing</span></button>
+        <button class="hotspot hotspot-town2" data-region="town2"><span class="pin"></span><span class="label">Brackenport</span></button>
+        <button class="hotspot hotspot-town3" data-region="town3"><span class="pin"></span><span class="label">Falgenfort</span></button>
+        <button class="hotspot hotspot-citadel" data-region="citadel"><span class="pin"></span><span class="label">The Citadel</span></button>
+      </div>
+      
+      <div class="map-tooltip" id="map-tooltip"><strong></strong><p></p></div>
+
+  
+    <p><em>The companion site for Hollowfire is not published publicly as it contains unpublished intellectual property.</em></p>
+  </section>
+<!--flippy cards from playground -->
+<section id="flip-cards">
+    <h3>Theme Cards</h3>
+    <p>Built for The Days Without God and Hollowfire. Visit the Writing Portfolio to see them in full.</p>
+  
+    <div class="theme-cards">
+      <div class="theme-card">
+        <div class="theme-card-inner">
+          <div class="theme-card-front" style="background-image: url('Vitruvian-Man.webp');">
+            <div class="card-overlay"><h3>Creation & Authority</h3></div>
+          </div>
+          <div class="theme-card-back">
+            <p>If God won't act, can man act in His place? Girolamo believes every obstacle removed is proof of God's approval. Right and wrong and acting in desperation are meant to be judged by the reader.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="theme-card">
+        <div class="theme-card-inner">
+          <div class="theme-card-front" style="background-image: url('Fallen-Angel.jpg');">
+            <div class="card-overlay"><h3>Sacred vs. Profane</h3></div>
+          </div>
+          <div class="theme-card-back">
+            <p>Saints' relics stolen and reassembled. Not symbols but actual flesh and blood, stolen and repurposed for reassembly into one being. Creation or desecration?</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="theme-card">
+        <div class="theme-card-inner">
+          <div class="theme-card-front" style="background-image: url('AlexanderVI.jpg');">
+            <div class="card-overlay"><h3>Obedience & Violence</h3></div>
+          </div>
+          <div class="theme-card-back">
+            <p>Murder a corrupt Pope to serve God. Obedience to higher authority requires disobedience to earthly power. Does serving God absolve that responsibility?</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="theme-card">
+        <div class="theme-card-inner">
+          <div class="theme-card-front" style="background-image: url('anatomical-skeleton.jpg');">
+            <div class="card-overlay"><h3>Certainty as Horror</h3></div>
+          </div>
+          <div class="theme-card-back">
+            <p>Girolamo never doubts or questions himself. His certainty is absolute the way he views God's bestowed athority on himself.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <p><em>The companion site for Days Without God is not published publicly as it contains unpublished intellectual property.</em></p>
+  </section>
+  <!--timeline from playground -->
+<section id="timeline">
+    <h3>Historical Timeline</h3>
+    <p>Built for The Days Without God. Hover over each point to see information about the dates shown.</p>
+  
+    <div class="timeline-container">
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="novel-span" style="left: 45%; width: 52%;"></div>
+  
+        <div class="timeline-event" style="left: 5%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">1492</div>
+          <div class="timeline-popup"><strong>1492</strong><p>Rodrigo Borgia elected Pope Alexander VI through simony</p></div>
+        </div>
+  
+        <div class="timeline-event" style="left: 15%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">1493</div>
+          <div class="timeline-popup"><strong>1493</strong><p>Cesare Borgia made Cardinal at age 18</p></div>
+        </div>
+  
+        <div class="timeline-event" style="left: 25%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">1497</div>
+          <div class="timeline-popup"><strong>1497</strong><p>Juan Borgia murdered in Rome</p></div>
+        </div>
+  
+        <div class="timeline-event" style="left: 35%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">1498</div>
+          <div class="timeline-popup"><strong>1498</strong><p>Savonarola executed in Florence for heresy</p></div>
+        </div>
+  
+        <div class="timeline-event" style="left: 45%;">
+          <div class="timeline-dot novel-start"></div>
+          <div class="timeline-label novel-label">Aug 1503</div>
+          <div class="timeline-popup"><strong>Early August 1503</strong><p>Novel begins</p></div>
+        </div>
+  
+        <div class="timeline-event" style="left: 60%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">Aug 6</div>
+          <div class="timeline-popup"><strong>August 6, 1503</strong><p>Pope Alexander VI falls gravely ill</p></div>
+        </div>
+  
+        <div class="timeline-event" style="left: 70%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">Aug 18</div>
+          <div class="timeline-popup"><strong>August 18, 1503</strong><p>Pope Alexander VI dies</p></div>
+        </div>
+  
+        <div class="timeline-event" style="left: 85%;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-label">Sept 22</div>
+          <div class="timeline-popup"><strong>September 22, 1503</strong><p>Cardinal Girolamo elected Pope Pius III</p></div>
+        </div>
+  
+        <div class="timeline-event" style="left: 97%;">
+          <div class="timeline-dot novel-end"></div>
+          <div class="timeline-label novel-label">Oct 18</div>
+          <div class="timeline-popup"><strong>October 18, 1503</strong><p>Pope Pius III dies after 26 days. Novel ends.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--f00ter -->
+  <footer>
+    <p>Liz Wilby  ·  2026</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
